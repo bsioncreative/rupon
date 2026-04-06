@@ -1,0 +1,105 @@
+{
+  "project": "NAVER WORKS Website CSS Specification",
+  "url": "https://naver.worksmobile.com/",
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "primary": "Pretendard, 'Noto Sans Korea', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif",
+        "description": "A clean, modern sans-serif font stack optimized for Korean and English readability."
+      },
+      "headings": {
+        "h1": {
+          "font_size": "56px",
+          "font_weight": "700",
+          "line_height": "1.2",
+          "color": "#202124"
+        },
+        "h2": {
+          "font_size": "48px",
+          "font_weight": "700",
+          "line_height": "64px",
+          "color": "#202124"
+        },
+        "h3": {
+          "font_size": "24px",
+          "font_weight": "700",
+          "line_height": "1.4",
+          "color": "#202124"
+        }
+      },
+      "body": {
+        "font_size": "16px",
+        "font_weight": "400",
+        "line_height": "1.6",
+        "color": "#202124"
+      }
+    },
+    "color_palette": {
+      "primary": {
+        "brand_green": "#00C73C",
+        "brand_blue": "#007BFF"
+      },
+      "grayscale": {
+        "black": "#202124",
+        "dark_gray": "#71767A",
+        "gray": "#95999C",
+        "light_gray": "#D4D8DC",
+        "off_white": "#F9FAFC",
+        "white": "#FFFFFF"
+      },
+      "backgrounds": {
+        "section_light": "#F9FAFC",
+        "section_blue": "#E5F4FF",
+        "section_green": "#EAFCFA"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": {
+          "background_color": "#202936",
+          "color": "#FFFFFF",
+          "padding": "13px 24px",
+          "border_radius": "4px",
+          "font_size": "16px",
+          "font_weight": "700",
+          "hover_effect": "Slightly darker background or opacity change"
+        },
+        "secondary": {
+          "background_color": "transparent",
+          "color": "#007BFF",
+          "padding": "0",
+          "border": "none",
+          "font_size": "16px",
+          "font_weight": "500",
+          "text_decoration": "none"
+        },
+        "ghost": {
+          "background_color": "transparent",
+          "color": "#202124",
+          "border": "1px solid #D4D8DC",
+          "padding": "10px 20px",
+          "border_radius": "4px"
+        }
+      },
+      "navigation": {
+        "height": "65px",
+        "background_color": "rgba(255, 255, 255, 0.95)",
+        "backdrop_filter": "blur(10px)",
+        "border_bottom": "1px solid #F1F3F9",
+        "font_size": "15px",
+        "font_weight": "500"
+      },
+      "cards": {
+        "background_color": "#FFFFFF",
+        "border_radius": "12px",
+        "box_shadow": "0 4px 20px rgba(0, 0, 0, 0.05)",
+        "padding": "32px"
+      }
+    },
+    "layout": {
+      "max_width": "1200px",
+      "container_padding": "0 20px",
+      "section_spacing": "100px 0"
+    }
+  }
+}
