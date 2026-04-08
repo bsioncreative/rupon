@@ -1,9 +1,9 @@
 import { Instagram, Twitter, Youtube, Mail, Phone, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { AnimateOnScroll } from "./AnimateOnScroll";
-import logoWhite from "../assets/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
-import appStoreBadge from "../assets/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
-import googlePlayBadge from "../assets/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
+import logoWhite from "../../assets/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
+import appStoreBadge from "../../assets/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
+import googlePlayBadge from "../../assets/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
 import { useLanguage } from "../context/LanguageContext";
 import type { Lang } from "../i18n/translations";
 
