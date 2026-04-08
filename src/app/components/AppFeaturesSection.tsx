@@ -18,10 +18,10 @@ import { AnimateOnScroll } from "./AnimateOnScroll";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 
-import imgScreenCoupon from "figma:asset/3dec1c2eb441333ba5a3fe694c127b75e2b773d4.png";
-import imgScreenQR from "figma:asset/3022366179de537a3ea63a6a6a870ea03c112c63.png";
-import imgScreenStore from "figma:asset/dddacefcd3b8947a2497a4a1d83662b0606520e8.png";
-import imgScreenDutyFree from "figma:asset/f4171c8e4a6c29057fcf80262013e4b8d258fa83.png";
+import imgScreenCoupon from "../assets/3dec1c2eb441333ba5a3fe694c127b75e2b773d4.png";
+import imgScreenQR from "../assets/3022366179de537a3ea63a6a6a870ea03c112c63.png";
+import imgScreenStore from "../assets/dddacefcd3b8947a2497a4a1d83662b0606520e8.png";
+import imgScreenDutyFree from "../assets/f4171c8e4a6c29057fcf80262013e4b8d258fa83.png";
 
 const IMG_COUPON = imgScreenCoupon;
 const IMG_STORE = imgScreenStore;
