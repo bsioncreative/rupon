@@ -21,8 +21,8 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext";
 
-import ramenHeroImg from "figma:asset/1b4742e69d0322151cdaa598e2a74fb190736e93.png";
-import touristRamenImg from "figma:asset/f1fd1e9bfab77b6fe697ab9f7ad3b4ed8a555463.png";
+import ramenHeroImg from "../../assets/1b4742e69d0322151cdaa598e2a74fb190736e93.png";
+import touristRamenImg from "../../assets/f1fd1e9bfab77b6fe697ab9f7ad3b4ed8a555463.png";
 
 const IMG_DASHBOARD =
   "https://images.unsplash.com/photo-1647507489316-39fc8a371fb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGJ1c2luZXNzJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkJTIwbGFwdG9wfGVufDF8fHx8MTc3MzUwODcwMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
