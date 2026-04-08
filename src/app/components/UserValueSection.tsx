@@ -1,6 +1,6 @@
 import { AnimateOnScroll, StaggerContainer, StaggerItem } from "./AnimateOnScroll";
-import appStoreBadge from "figma:asset/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
-import googlePlayBadge from "figma:asset/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
+import appStoreBadge from "../assets/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
+import googlePlayBadge from "../assets/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
 import { useLanguage } from "../context/LanguageContext";
 
 const valueImages = [
