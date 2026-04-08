@@ -2,8 +2,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import logoRed from "figma:asset/4942a29f204ffb8e21a996ac5bac4cd126bae468.png";
-import logoWhite from "figma:asset/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
+import logoRed from "../assets/4942a29f204ffb8e21a996ac5bac4cd126bae468.png";
+import logoWhite from "../assets/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
 import { useLanguage } from "../context/LanguageContext";
 import type { Lang } from "../i18n/translations";
 
@@ -27,7 +27,6 @@ export function Header() {
     return () => el.removeEventListener("scroll", h);
   }, []);
 
-  // Track active section via IntersectionObserver
   useEffect(() => {
     if (!isLanding) return;
     const sectionIds = NAV.map((n) => n.href.replace("#", ""));
@@ -42,8 +41,6 @@ export function Header() {
     };
 
     const scrollRoot = document.getElementById("main-scroll");
-
-    // Detect scroll-to-bottom to activate last section
     const lastSectionId = sectionIds[sectionIds.length - 1];
     const handleScroll = () => {
       if (!scrollRoot) return;
@@ -55,7 +52,6 @@ export function Header() {
 
     scrollRoot?.addEventListener("scroll", handleScroll);
 
-    // Small delay to ensure sections are rendered
     const timer = setTimeout(() => {
       sectionIds.forEach((id) => {
         const el = document.getElementById(id);
@@ -77,7 +73,6 @@ export function Header() {
     };
   }, [isLanding, lang]);
 
-  // Handle hash-based scroll after navigation to landing page
   useEffect(() => {
     if (isLanding && location.hash) {
       const tryScroll = () => {
@@ -86,7 +81,6 @@ export function Header() {
           target.scrollIntoView({ behavior: "smooth" });
         }
       };
-      // Small delay to ensure DOM is ready after route change
       const timer = setTimeout(tryScroll, 100);
       return () => clearTimeout(timer);
     }
@@ -112,9 +106,7 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      {/* Header Inner — h:64, px:20, flex horizontal, center, space-between */}
       <div className="flex items-center justify-between h-[64px] max-w-[1080px] w-full mx-auto px-5">
-        {/* Logo */}
         <Link
           to="/"
           className="flex items-center"
@@ -132,8 +124,6 @@ export function Header() {
             className="h-[20px] w-auto transition-opacity duration-300"
           />
         </Link>
-
-        {/* Desktop Nav — flex horizontal, gap:4 */}
         <nav className="hidden md:flex items-center gap-1">
           {NAV.map((n) => {
             const isActive = isLanding && scrolled && activeSection === n.href;
@@ -158,10 +148,7 @@ export function Header() {
             );
           })}
         </nav>
-
-        {/* Desktop Right — flex horizontal, gap:12 */}
         <div className="hidden md:flex items-center gap-3">
-          {/* Lang Switcher — flex horizontal, gap:2 */}
           <div className="flex items-center gap-0.5">
             {LANGS.map((l) => (
               <button
@@ -188,8 +175,6 @@ export function Header() {
             {t.header.partner}
           </Link>
         </div>
-
-        {/* Mobile Hamburger */}
         <button className="md:hidden cursor-pointer" onClick={() => setOpen(!open)}>
           {open ? (
             <X className={scrolled || !isLanding ? "text-[#111]" : "text-white"} size={22} />
@@ -198,8 +183,6 @@ export function Header() {
           )}
         </button>
       </div>
-
-      {/* Mobile Dropdown — flex vertical, gap:4, p:16 */}
       {open && (
         <div className="absolute top-[64px] left-0 right-0 bg-white border-b border-[#F0F0F0] md:hidden">
           <div className="flex flex-col gap-1 p-4">
@@ -220,7 +203,6 @@ export function Header() {
                 </button>
               );
             })}
-            {/* Mobile Lang Switcher */}
             <div className="flex items-center gap-1 px-4 py-3">
               {LANGS.map((l, i) => (
                 <div key={l} className="flex items-center gap-1">
