@@ -1,11 +1,11 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
-import appScreen1 from "figma:asset/b5f2006a0a7faadb51dff60872d725785a496e7b.png";
-import appScreen2 from "figma:asset/1a9d8a8f0baf6daee3b36d752fa0186f83ca1240.png";
-import appScreen3 from "figma:asset/9faa6c741fdbb5dd6674c64ff41373d842c931a2.png";
-import appStoreBadge from "figma:asset/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
-import googlePlayBadge from "figma:asset/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
+import appScreen1 from "../assets/b5f2006a0a7faadb51dff60872d725785a496e7b.png";
+import appScreen2 from "../assets/1a9d8a8f0baf6daee3b36d752fa0186f83ca1240.png";
+import appScreen3 from "../assets/9faa6c741fdbb5dd6674c64ff41373d842c931a2.png";
+import appStoreBadge from "../assets/b0b18c1e603a73879ce19dd04067fadfcfa3ccfc.png";
+import googlePlayBadge from "../assets/af49cd5d1ffa6da8aa01dd742b92934b5b4fc1c5.png";
 import { useLanguage } from "../context/LanguageContext";
 
 const HERO_BACKGROUNDS = [
