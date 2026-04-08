@@ -2,8 +2,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import logoRed from "../assets/4942a29f204ffb8e21a996ac5bac4cd126bae468.png";
-import logoWhite from "../assets/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
+import logoRed from "../../assets/4942a29f204ffb8e21a996ac5bac4cd126bae468.png";
+import logoWhite from "../../assets/d30d50279da8ad4f96a82b5bb26f620b094c7725.png";
 import { useLanguage } from "../context/LanguageContext";
 import type { Lang } from "../i18n/translations";
 
