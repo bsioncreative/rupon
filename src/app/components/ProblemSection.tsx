@@ -1,4 +1,4 @@
-import problemImg from "figma:asset/8fc2abcdbc2da83bc6d409fadb38409d246b6a64.png";
+import problemImg from "../assets/8fc2abcdbc2da83bc6d409fadb38409d246b6a64.png";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MapPin, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimateOnScroll, StaggerContainer, StaggerItem } from "./AnimateOnScroll";
